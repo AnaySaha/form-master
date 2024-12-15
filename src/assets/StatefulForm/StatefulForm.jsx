@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const StatefulForm = () => {
     const [email, setEmail] = useState(null);
+    const [error, setError] = useState('')
+    
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -21,7 +23,12 @@ const StatefulForm = () => {
                     <br />
                     <input type="email" name="email" />
                     <br />
+                    <input type="password" name="password" required />
+                    <br />
                     <input type="submit" value="Submit" />
+                    {
+                        error && <p>{error}</p>
+                    }
                 </form> 
         </div>
     );
