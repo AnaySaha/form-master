@@ -5,5 +5,7 @@
  * for each input field
  * 3. controlled element: one object in a state holding
  * all the input fields value..
- * 4. uncontrolled element:
+ * 4. uncontrolled element: useRefn to create a reference to the
+ * element and access value by using like: nameRef.current.value
+ * 
  */
