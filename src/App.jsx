@@ -1,8 +1,9 @@
 
 import './App.css'
-import HookFrom from './assets/components/HookForm/HookFrom'
-import RefFrom from './assets/components/RefFrom/RefFrom'
-import StatefulForm from './assets/StatefulForm/StatefulForm'
+import ReuseableForm from './assets/components/ReuseableForm/ReuseableForm'
+// import HookFrom from './assets/components/HookForm/HookFrom'
+// import RefFrom from './assets/components/RefFrom/RefFrom'
+// import StatefulForm from './assets/StatefulForm/StatefulForm'
 // import SimpleFrom from './assets/components/SimpleFrom/SimpleFrom'
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <StatefulForm></StatefulForm>
       <RefFrom></RefFrom> */}
-    <HookFrom></HookFrom>
+    {/* <HookFrom></HookFrom> */}
+    <ReuseableForm formTitle={'Sign Up'}></ReuseableForm>
+    <ReuseableForm formTitle={'Sign Up'}></ReuseableForm>
     </>
   )
 }
