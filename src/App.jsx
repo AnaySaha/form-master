@@ -8,6 +8,14 @@ import ReuseableForm from './assets/components/ReuseableForm/ReuseableForm'
 
 function App() {
 
+  const handleSingUpSubmit = data =>{
+    console.log('sign up data', data);
+  }
+
+  const handleUpdateProfile = data =>{
+   console.log('update profile', data);
+  }
+
   return (
     <>
 
@@ -16,8 +24,16 @@ function App() {
       {/* <StatefulForm></StatefulForm>
       <RefFrom></RefFrom> */}
     {/* <HookFrom></HookFrom> */}
-    <ReuseableForm formTitle={'Sign Up'}></ReuseableForm>
-    <ReuseableForm formTitle={'Sign Up'}></ReuseableForm>
+    <ReuseableForm formTitle={'Sign Up'}
+    handleSubmit={handleSingUpSubmit}>
+      <div>
+        <h2>Sign up</h2>
+        <p>nfhbhbfj</p>
+      </div>
+    </ReuseableForm>
+    <ReuseableForm formTitle={'Profile Update'}
+    handleSubmit={handleUpdateProfile}
+    submitBtnText='Update '></ReuseableForm>
     </>
   )
 }

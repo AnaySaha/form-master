@@ -1,14 +1,23 @@
 
 
-const ReuseableForm = ({formTitle, submitBtnText ='Submit'}) => {
+const ReuseableForm = ({formTitle, handleSubmit, submitBtnText ='Submit',
+    children}) => {
 
-    const handleSubmit = e =>{
+    const handleLocalSubmit = e =>{
         e.preventDefault();
+        const data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            password: e.target.password.value
+        }
+        handleSubmit(data)
     }
 
     return (
         <div>
-               <form onSubmit={handleSubmit}>
+            {/* <h2>{formTitle}</h2> */}
+            {children}
+               <form onSubmit={handleLocalSubmit}>
                     <input value={name} onChange={handleNameChange} type="text" name="name" />
                     <br />
                     <input type="email" name="email" />
