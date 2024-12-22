@@ -1,6 +1,7 @@
 
 import './App.css'
-import ReuseableForm from './assets/components/ReuseableForm/ReuseableForm'
+import Grandpa from './assets/components/Grandpa/Grandpa';
+// import ReuseableForm from './assets/components/ReuseableForm/ReuseableForm'
 // import HookFrom from './assets/components/HookForm/HookFrom'
 // import RefFrom from './assets/components/RefFrom/RefFrom'
 // import StatefulForm from './assets/StatefulForm/StatefulForm'
@@ -20,20 +21,21 @@ function App() {
     <>
 
       <h1>Vite + React</h1>
+      <Grandpa></Grandpa>
       {/* <SimpleFrom></SimpleFrom> */}
       {/* <StatefulForm></StatefulForm>
       <RefFrom></RefFrom> */}
     {/* <HookFrom></HookFrom> */}
-    <ReuseableForm formTitle={'Sign Up'}
-    handleSubmit={handleSingUpSubmit}>
-      <div>
+    {/* <ReuseableForm formTitle={'Sign Up'}
+    handleSubmit={handleSingUpSubmit}> */}
+      {/* <div>
         <h2>Sign up</h2>
         <p>nfhbhbfj</p>
       </div>
-    </ReuseableForm>
-    <ReuseableForm formTitle={'Profile Update'}
+    </ReuseableForm> */}
+    {/* <ReuseableForm formTitle={'Profile Update'}
     handleSubmit={handleUpdateProfile}
-    submitBtnText='Update '></ReuseableForm>
+    submitBtnText='Update '></ReuseableForm> */}
     </>
   )
 }
